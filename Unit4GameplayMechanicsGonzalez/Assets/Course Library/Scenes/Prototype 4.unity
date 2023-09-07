@@ -204,6 +204,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fd5555088952419ebf0eb82e9096fa5, type: 3}
+--- !u!1 &543425560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1742899641471652, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
+  m_PrefabInstance: {fileID: 1448278872}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1052013560
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 4899304803811363788, guid: bbb604ad50ebcd843b546725e723692e, type: 3}
+  enemyCount: 0
 --- !u!4 &1052013562
 Transform:
   m_ObjectHideFlags: 0
@@ -538,7 +544,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 8878a37eb67ddac4ead51890a31d6a18, type: 3}
---- !u!1001 &1432897939
+--- !u!1001 &1448278872
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -548,7 +554,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1742899641471652, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
       propertyPath: m_Name
-      value: Powerup indicator
+      value: Power Indicator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742899641471652, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4428908044626120, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
       propertyPath: m_LocalScale.x
@@ -754,7 +764,7 @@ Transform:
   m_GameObject: {fileID: 2101015362}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.243, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -774,7 +784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   hasPowerup: 0
-  powerupIndicator: {fileID: 0}
+  powerupIndicator: {fileID: 543425560}
 --- !u!54 &2101015368
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -911,9 +921,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5677609784601478968, guid: a987d0aebcd2bf546ae1c81b1912f197, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7187996378509889798, guid: a987d0aebcd2bf546ae1c81b1912f197, type: 3}
       propertyPath: m_Name
       value: Gem_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187996378509889798, guid: a987d0aebcd2bf546ae1c81b1912f197, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -932,4 +950,4 @@ SceneRoots:
   - {fileID: 1052013562}
   - {fileID: 2074436571}
   - {fileID: 8825644481331260558}
-  - {fileID: 1432897939}
+  - {fileID: 1448278872}
