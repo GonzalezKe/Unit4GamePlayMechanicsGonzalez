@@ -238,8 +238,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 139fd07d24634ff458f9d7cdbaf5f28d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 4899304803811363788, guid: bbb604ad50ebcd843b546725e723692e, type: 3}
+  enemyPrefab:
+  - {fileID: 4899304803811363788, guid: bbb604ad50ebcd843b546725e723692e, type: 3}
+  - {fileID: 4899304803811363788, guid: 93bc380fd259a5642adf6843bda9b49c, type: 3}
+  powerupPrefab: {fileID: 1173247164}
   enemyCount: 0
+  waveNumber: 1
 --- !u!4 &1052013562
 Transform:
   m_ObjectHideFlags: 0
@@ -255,6 +259,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1173247164 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7187996378509889798, guid: a987d0aebcd2bf546ae1c81b1912f197, type: 3}
+  m_PrefabInstance: {fileID: 8825644481331260558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1211016355
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,7 +936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7187996378509889798, guid: a987d0aebcd2bf546ae1c81b1912f197, type: 3}
       propertyPath: m_Name
-      value: Gem_01
+      value: Powerup
       objectReference: {fileID: 0}
     - target: {fileID: 7187996378509889798, guid: a987d0aebcd2bf546ae1c81b1912f197, type: 3}
       propertyPath: m_IsActive
