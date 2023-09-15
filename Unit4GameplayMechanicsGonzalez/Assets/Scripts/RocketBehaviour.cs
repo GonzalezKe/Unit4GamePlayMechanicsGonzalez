@@ -9,8 +9,9 @@ public class RocketBehaviour : MonoBehaviour
     private float speed = 15.0f;
     private bool homing;
 
-    private float rocektStrength = 15.0f;
+    private float rocketStrength = 15.0f;
     private float aliveTimer = 5.0f;
+    private Transform homingTarget;
 
     // Start is called before the first frame update
     void Start()
