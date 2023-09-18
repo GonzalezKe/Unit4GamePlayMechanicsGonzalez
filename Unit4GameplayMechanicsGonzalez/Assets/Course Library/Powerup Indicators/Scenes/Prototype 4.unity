@@ -849,12 +849,12 @@ MonoBehaviour:
   speed: 2
   hasPowerup: 0
   powerupIndicator: {fileID: 543425560}
-  currentPowerUp: 0
-  hangTime: 0
-  smashSpeed: 0
-  explosionForce: 0
-  explosionRadius: 0
-  rocketPrefab: {fileID: 0}
+  currentPowerUp: 1
+  hangTime: 2
+  smashSpeed: 2
+  explosionForce: 2
+  explosionRadius: 2
+  rocketPrefab: {fileID: 4843591112440220128, guid: ff25ed456f74acb4ba8f18b020da06a4, type: 3}
 --- !u!54 &2101015368
 Rigidbody:
   m_ObjectHideFlags: 0
