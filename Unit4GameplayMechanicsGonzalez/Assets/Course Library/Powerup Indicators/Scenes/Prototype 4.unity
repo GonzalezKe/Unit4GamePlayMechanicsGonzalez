@@ -212,6 +212,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4163412967772093335, guid: a987d0aebcd2bf546ae1c81b1912f197, type: 3}
+      propertyPath: powerUptype
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5643032647174080403, guid: a987d0aebcd2bf546ae1c81b1912f197, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -255,6 +259,10 @@ PrefabInstance:
     - target: {fileID: 7187996378509889798, guid: a987d0aebcd2bf546ae1c81b1912f197, type: 3}
       propertyPath: m_Name
       value: Powerup
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187996378509889798, guid: a987d0aebcd2bf546ae1c81b1912f197, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -849,7 +857,7 @@ MonoBehaviour:
   speed: 2
   hasPowerup: 0
   powerupIndicator: {fileID: 543425560}
-  currentPowerUp: 1
+  currentPowerUp: 0
   hangTime: 2
   smashSpeed: 2
   explosionForce: 2

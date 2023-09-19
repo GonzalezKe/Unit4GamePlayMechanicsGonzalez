@@ -5,7 +5,7 @@ public enum PowerUpType { None, Pushback, Rockets, Smash }
 
 public class PowerUp : MonoBehaviour
 {
-    public PowerUpType poweruptype;
+    public PowerUpType powerUptype;
     internal PowerUpType powerUpType;
 
     // Start is called before the first frame update
