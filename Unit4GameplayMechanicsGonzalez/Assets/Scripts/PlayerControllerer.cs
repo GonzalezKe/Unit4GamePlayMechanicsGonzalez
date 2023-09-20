@@ -101,12 +101,14 @@ public class PlayerController : MonoBehaviour
     IEnumerator Smash()
     {
         var enemies = FindObjectsOfType<Enemy>();
+        floorY = transform.position.y;
         float jumpTime = Time.time + hangTime;
 
         while (Time.time < jumpTime)
         {
             //move the player up while still keeping theirx velocity.
-          playerRb.velocity = new Vector2(playerRb.velocity.x,smashSpeed); yield return null; 
+          playerRb.velocity = new Vector2(playerRb.velocity.x,smashSpeed); 
+            yield return null; 
         }
 
         while(transform.position.y > floorY)
